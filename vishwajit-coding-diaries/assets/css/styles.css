@@ -369,7 +369,7 @@ img {
 
 }
 
-.work_text_desc {
+.work_text_desc, .projects_text_desc {
   text-align: center;
   font-size: 1rem;
 
@@ -534,4 +534,54 @@ img {
   .home_img {
     right: 10%;
   }
+}
+
+/* Flexbox layout for projects and GitHub profile */
+.projects_row {
+  justify-items: center;
+  margin-bottom: 20px; /* Space between items */
+   /* Allows wrapping if there isn't enough space */
+}
+
+/* Individual project container style (smaller size, no border or hover) */
+.projects_container {
+  width: 45%; /* Smaller width for each project container */
+  text-align: center;
+  padding: 10px;
+  /* Removed border-radius, box-shadow, and hover effects */
+  margin-bottom: 10px; /* Space between items in the same row */
+}
+
+/* GitHub profile container (smaller) */
+.github_profile_container {
+  width: 45%; /* Keep this in the same width as the projects */
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px; /* Space between items */
+}
+
+/* Spacing between description and title */
+.projects_text_desc {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Style for project links */
+.work_text {
+  font-size: 1.2rem;
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.work_text:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Section title styling */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: #333;
 }
